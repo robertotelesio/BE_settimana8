@@ -1,0 +1,19 @@
+EWALLET
+Progettare un’applicazione, chiamata Ewallet, per la gestione di un conto corrente.
+Le funzionalità da sviluppare sono:
+Creazione conto corrente, con data creazione, iban, saldo e intestatario
+Eliminare e aggiornare un conto corrente
+Prelievo e Versamento dal conto
+Lista movimenti 
+Le funzionalità sono esposte tramite servizi rest.
+
+Pojo: ContoCorrente, Movimenti.
+Rest: GestioneEwallet
+
+metodi: creaConto(), eliminaConto(), aggiornaConto().
+
+prelievo() e versamento() dal Conto: contoCorrente, data(String), importo, tipoMovimento(p, v)
+
+2 array statici (contiCorrenti, movimenti)
+
+versamento()/prelievo() modifica saldo e aggiunge un record nell'array dei movimenti.
